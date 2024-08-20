@@ -5,6 +5,7 @@ SERVER_USER=ubuntu
 SERVER_HOST=13.232.36.156
 DEPLOY_PATH=/var/www/html/Devops-workspace
 PEM_KEY_PATH=/var/www/html/autodeploy-key.pem
+SSH_KEY_PATH=/root/.ssh/id_ed25519.pub
 
 # Git repository details
 REPO_URL=git@github.com:sureshselvarajan/Devops-workspace.git
