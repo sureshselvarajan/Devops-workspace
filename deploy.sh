@@ -7,7 +7,7 @@ DEPLOY_PATH=/var/www/html/Devops-workspace
 PEM_KEY_PATH=/var/www/html/autodeploy-key.pem
 
 # Git repository details
-REPO_URL=https://github.com/sureshselvarajan/Devops-workspace.git
+REPO_URL=git@github.com:sureshselvarajan/Devops-workspace.git
 BRANCH=release
 
 # Deployment functions
