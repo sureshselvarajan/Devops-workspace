@@ -1,3 +1,10 @@
+SSH Key Setup: Ensure SSH key-based authentication for secure connections.
+Permissions: Verify that the user has necessary permissions on the server.
+Error Handling: Implement robust error handling and logging.
+Deployment Strategy: Consider using more advanced deployment strategies like rolling updates or blue-green deployments.
+Artifact Deployment: The script assumes deploying a JAR file. Adjust according to your project structure (e.g., WAR, EAR).
+Service Management: The systemctl command is used for systemd-based systems. For other systems, use appropriate commands.
+Additional Steps: You might need additional steps like database migrations, configuration updates, or asset compilation.
 
 Configuration Management: Use configuration files to manage variables.
 Deployment Stages: Define different environments with specific configurations.
