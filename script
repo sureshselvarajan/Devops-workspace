@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Server details
+SERVER_USER=yubuntu
+SERVER_HOST=13.232.36.156
+DEPLOY_PATH=/var/www/your_project
+PEM_KEY_PATH=/path/to/your/pem/key
+
+# Git repository details
+REPO_URL=git@github.com:your_username/your_repo.git
+BRANCH=main
+
+# Deployment functions
+deploy() {
+  ssh -i "$PEM_KEY_PATH" $SERVER_USER@$SERVER_HOST "
+    cd $DEPLOY_PATH
+    git pull origin $BRANCH
+    # Additional deployment steps, e.g.,
+    # mvn clean package
+    # systemctl restart your_service
+  "
+}
+
+deploy
