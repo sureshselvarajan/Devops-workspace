@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Server details
-SERVER_USER=yubuntu
+SERVER_USER=ubuntu
 SERVER_HOST=13.232.36.156
-DEPLOY_PATH=/var/www/your_project
-PEM_KEY_PATH=/path/to/your/pem/key
+DEPLOY_PATH=/var/www/html/Devops-workspace
+PEM_KEY_PATH=/var/www/html/autodeploy-key.pem
 
 # Git repository details
-REPO_URL=git@github.com:your_username/your_repo.git
-BRANCH=main
+REPO_URL=https://github.com/sureshselvarajan/Devops-workspace.git
+BRANCH=release
 
 # Deployment functions
 deploy() {
